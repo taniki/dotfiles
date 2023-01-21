@@ -1,0 +1,15 @@
+fish
+gir1.2-gtop-2.0
+git
+gnome-shell-extension-manager
+golang-go
+htop
+neofetch
+neovim
+pass
+python3-neovim
+stow
+thunderbird
+transmission
+virtualenv
+vlc

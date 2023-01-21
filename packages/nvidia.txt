@@ -1,0 +1,2 @@
+linux-modules-nvidia-525-generic-hwe-22.04
+nvidia-driver-525
