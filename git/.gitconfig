@@ -1,0 +1,15 @@
+[user]
+	email = tk@deveha.com
+	name = taniki
+[push]
+	default = simple
+[core]
+	excludesfile = /home/tk/.gitignore_global
+	editor = vim
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[alias]
+	lg = !git-foresta --style=10 | less -RSX
