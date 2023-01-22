@@ -41,8 +41,6 @@ return require('packer').startup(function(use)
     config = 'vim.cmd[[ALEEnable]]'
   }
 
-  use 'digitaltoad/vim-pug'
-
   use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
@@ -66,15 +64,7 @@ return require('packer').startup(function(use)
       }
   })
 
-  use {
-      "folke/which-key.nvim",
-      config = function()
-          vim.o.timeout = true
-          vim.o.timeoutlen = 300
-          require("which-key").setup {
-          }
-      end
-  }
+  use { "folke/which-key.nvim" }
 
   use {
       "folke/zen-mode.nvim",
