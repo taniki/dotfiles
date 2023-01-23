@@ -2,8 +2,6 @@ vim.g.mapleader = " "
 
 local wk = require("which-key")
 
---vim.keymap.set("n", "<leader>ge", vim.cmd.Ex)
-
 wk.register({
     g = {
         name = "[g]o",
@@ -16,5 +14,11 @@ wk.register({
         r = { "<cmd>Telescope live_grep<cr>", "g[r]ep" },
         n = { "<cmd>Telescope notify<cr>", "[n]otification history"},
         h = { "<cmd>Telescope help_tags<cr>", "[h]elp" },
+    },
+    m = {
+        name = "[m]ode",
+        z = { "<cmd>ZenMode<cr>", "[z]en" },
+        i = { "<cmd>set list<cr>", "show [i]nvisible" },
+        ii ={ "<cmd>set nolist<cr>", "hide [i]nvis[i]ble" }
     }
 }, { prefix = '<leader>' })
