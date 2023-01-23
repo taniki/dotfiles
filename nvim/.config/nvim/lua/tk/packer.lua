@@ -41,6 +41,8 @@ return require('packer').startup(function(use)
     config = 'vim.cmd[[ALEEnable]]'
   }
 
+  use { 'lewis6991/gitsigns.nvim' }
+
   use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
@@ -50,31 +52,14 @@ return require('packer').startup(function(use)
  
   use({
       "folke/noice.nvim",
-      config = function()
-          require("noice").setup({
-          })
-      end,
       requires = {
-          -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
           "MunifTanjim/nui.nvim",
-          -- OPTIONAL:
-          --   `nvim-notify` is only needed, if you want to use the notification view.
-          --   If not available, we use `mini` as the fallback
           "rcarriga/nvim-notify",
       }
   })
-
   use { "folke/which-key.nvim" }
+  use { "folke/zen-mode.nvim" }
 
-  use {
-      "folke/zen-mode.nvim",
-      config = function()
-          require("zen-mode").setup {
-            backdrop = 1
-          }
-      end
-  }
-  
   use { 'feline-nvim/feline.nvim' }
 
 end)
