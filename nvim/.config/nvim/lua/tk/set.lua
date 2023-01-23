@@ -1,5 +1,7 @@
 vim.opt.guicursor = ""
 
+vim.opt.cursorline = true
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -11,6 +13,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = true
+vim.opt.linebreak = true
 
 vim.opt.scrolloff = 8
 vim.opt.sidescroll = 8
