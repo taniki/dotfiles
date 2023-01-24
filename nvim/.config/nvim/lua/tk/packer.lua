@@ -41,6 +41,17 @@ return require('packer').startup(function(use)
     config = 'vim.cmd[[ALEEnable]]'
   }
 
+  use {
+    "zbirenbaum/copilot.lua",
+    requires = {
+        "onsails/lspkind-nvim",
+    }
+  }
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" }
+  }
+
   use { 'lewis6991/gitsigns.nvim' }
 
   use { "catppuccin/nvim", as = "catppuccin" }

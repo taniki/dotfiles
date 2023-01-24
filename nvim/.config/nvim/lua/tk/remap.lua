@@ -20,5 +20,9 @@ wk.register({
         z = { "<cmd>ZenMode<cr>", "[z]en" },
         i = { "<cmd>set list<cr>", "show [i]nvisible" },
         ii ={ "<cmd>set nolist<cr>", "hide [i]nvis[i]ble" }
+    },
+    c = {
+        name = "[c]opilot",
+        p = { "<cmd>Copilot panel<cr>", "[p]anel" },
     }
 }, { prefix = '<leader>' })
