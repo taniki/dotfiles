@@ -43,14 +43,17 @@ return require('packer').startup(function(use)
 
   use {
     "zbirenbaum/copilot.lua",
-    requires = {
-        "onsails/lspkind-nvim",
-    }
+    cmd = "Copilot",
+    event = "InsertEnter",
   }
-  use {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua" }
-  }
+
+  -- use {
+  --   "zbirenbaum/copilot-cmp",
+  --   requires = {
+  --       "onsails/lspkind-nvim",
+  --   }
+  --   after = { "copilot.lua" }
+  -- }
 
   use { 'lewis6991/gitsigns.nvim' }
 
