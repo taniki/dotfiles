@@ -35,6 +35,14 @@ return require('packer').startup(function(use)
   }
 
   use {
+      'quarto-dev/quarto-nvim',
+      requires = {
+          'jmbuhr/otter.nvim',
+          'neovim/nvim-lspconfig'
+      }
+  }
+
+  use {
     'w0rp/ale',
     ft = {'sh', 'fisk', 'cmake', 'html', 'css', 'javascript', 'markdown', 'lua', 'python'},
     cmd = 'ALEEnable',
