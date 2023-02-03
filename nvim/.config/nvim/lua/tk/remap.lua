@@ -27,3 +27,10 @@ wk.register({
         p = { "<cmd>Copilot panel<cr>", "[p]anel" },
     }
 }, { prefix = '<leader>' })
+
+wk.register({
+    E = { ":m '>+1<CR>gv=gv", "move selection down" },
+    I = { ":m '<-2<CR>gv=gv", "move selection up" }
+}, {
+    mode = "v"
+})
