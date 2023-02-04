@@ -17,5 +17,3 @@ vim.opt.linebreak = true
 
 vim.opt.scrolloff = 8
 vim.opt.sidescroll = 8
-
-vim.cmd.colorscheme "catppuccin"
