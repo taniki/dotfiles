@@ -1,0 +1,10 @@
+# include ~/.newsboat/dark
+
+auto-reload yes
+reload-time 10
+
+browser firefox
+pager "batcat -n --paging=always --color=always"
+
+bookmark-cmd "~/.config/newsboat/bookmark.fish"
+bookmark-autopilot yes
