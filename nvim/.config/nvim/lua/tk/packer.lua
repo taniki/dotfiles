@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
           {'neovim/nvim-lspconfig'},             -- Required
           {'williamboman/mason.nvim'},           -- Optional
           {'williamboman/mason-lspconfig.nvim'}, -- Optional
+          {'onsails/lspkind-nvim'},
 
           -- Autocompletion
           {'hrsh7th/nvim-cmp'},         -- Required

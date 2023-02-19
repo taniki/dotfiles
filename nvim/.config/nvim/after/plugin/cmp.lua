@@ -1,5 +1,7 @@
 local cmp = require('cmp')
 local luasnip = require('luasnip')
+local lspkind = require('lspkind')
+
 
 local has_words_before = function()
   if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
@@ -8,7 +10,27 @@ local has_words_before = function()
 end
 
 cmp.setup({
+    formatting = {
+        format = lspkind.cmp_format {
+            with_text = true,
+            menu = {
+                otter = "[🦦]",
+                luasnip = "[snip]",
+                nvim_lsp = "[LSP]",
+                buffer = "[buf]",
+                path = "[path]",
+                spell = "[spell]",
+                pandoc_references = "[ref]",
+                tags = "[tag]",
+                treesitter = "[TS]",
+                calc = "[calc]",
+                latex_symbols = "[tex]",
+                emoji = "[emoji]",
+            },
+        },
+    },
     sources = {
+        { name = 'otter' },
         { name = "copilot", index = 2 },
         { name = "nvim_lsp", index = 2 },
         { name = "path", group_index = 2 },
