@@ -62,6 +62,10 @@ return require('packer').startup(function(use)
   --   after = { "copilot.lua" }
   -- }
 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
+
   use { 'lewis6991/gitsigns.nvim' }
   use { "lukas-reineke/indent-blankline.nvim" }
 
