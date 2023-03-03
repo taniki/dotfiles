@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
       }
   }
 
+  use 'jbyuki/nabla.nvim'
+
   use {
     'w0rp/ale',
     ft = {'sh', 'fisk', 'cmake', 'html', 'css', 'javascript', 'markdown', 'lua', 'python'},
