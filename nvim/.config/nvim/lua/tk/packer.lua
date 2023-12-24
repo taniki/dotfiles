@@ -52,9 +52,9 @@ return require('packer').startup(function(use)
     config = 'vim.cmd[[ALEEnable]]'
   }
 
-  use {
-    "zbirenbaum/copilot.lua",
-  }
+  -- use {
+  --  "zbirenbaum/copilot.lua",
+  -- }
 
   -- use {
   --   "zbirenbaum/copilot-cmp",
