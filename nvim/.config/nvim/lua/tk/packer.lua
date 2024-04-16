@@ -47,22 +47,20 @@ return require('packer').startup(function(use)
 
   use {
     'w0rp/ale',
-    ft = {'sh', 'fisk', 'cmake', 'html', 'css', 'javascript', 'markdown', 'lua', 'python'},
+    ft = {
+        'sh',
+        'fisk',
+        'cmake',
+        'html',
+        'css',
+        'javascript',
+        'markdown',
+        'lua',
+        'python'
+    },
     cmd = 'ALEEnable',
     config = 'vim.cmd[[ALEEnable]]'
   }
-
-  -- use {
-  --  "zbirenbaum/copilot.lua",
-  -- }
-
-  -- use {
-  --   "zbirenbaum/copilot-cmp",
-  --   requires = {
-  --       "onsails/lspkind-nvim",
-  --   }
-  --   after = { "copilot.lua" }
-  -- }
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
